@@ -154,8 +154,8 @@ const AuthForm = ({ type }: { type: FormType }) => {
       </Form>
       {/* OTP Verification */}
 
-      {true && (
-        <OtpModel email={form.getValues("email")} accountID={accountID} />
+      {accountID && (
+        <OtpModel email={form.getValues("email")} accountId={accountID} />
       )}
     </>
   );
